@@ -74,7 +74,25 @@ function Components(props) {
 }
 
 ```
+### lint
+```
+$ npx eslint --init
 
+$ yarn add eslint-plugin-react@latest --dev
+$ yarn add eslint-plugin-react-hooks --dev
+
+{
+  "plugins": [
+    // ...
+    "react-hooks"
+  ],
+  "rules": {
+    // ...
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
+```
 
 
 
